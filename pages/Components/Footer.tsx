@@ -1,17 +1,29 @@
 import styled from "styled-components";
 
 const MainDiv = styled.div({
-    backgroundColor: "blue" 
+    backgroundColor: "grey" ,
+    display:"flex",
+    justifyContent: "center"
 });
+
+const MainUl = styled.ul({
+    display:"flex",
+})
+
+const MainLi = styled.li({
+    listStyle: "none",
+    padding: "1rem",
+    
+})
 
 const Footer = () => {
     return(
         <MainDiv>
-            <ul>
-                <li><a href="">Linkedin</a></li>
-                <li><a href="">Github</a></li>
-                <li><a href="">Twitter</a></li>
-            </ul>
+            <MainUl>
+                <MainLi><a href="">Linkedin</a></MainLi>
+                <MainLi><a href="">Github</a></MainLi>
+                <MainLi><a href="">Twitter</a></MainLi>
+            </MainUl>
         </MainDiv>
     )
 }

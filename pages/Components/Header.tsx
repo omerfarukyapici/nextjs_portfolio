@@ -1,19 +1,27 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 const MainDiv = styled.div({
-    backgroundColor: "red" 
+    backgroundColor: "black",
+    color: "white"
 });
 
 const Header = () => {
-    return(
+    return (
         <MainDiv>
             <ul>
-                <li>
-                    <a href="../Me">Me(Home) page</a>
-                </li>
-                <li>
-                    <a href="../Projects">Project page</a>                    
-                </li>
+                <Link href="../Home">
+                    <a>Home</a>
+                </Link>
+                <Link href="../Projects">
+                    <a>Projects</a>
+                </Link>
+                <Link href="../Productivity">
+                    <a>Productivity</a>
+                </Link>
+                <Link href="../Contact">
+                    <a>Contact</a>
+                </Link>
             </ul>
         </MainDiv>
     )

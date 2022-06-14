@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
-import Me from './Me';
+import HomePage from "./Home";
 
 const Home: NextPage = () => {
   return (
-    <div className="">  
-       <Me /> 
+    <div className="">
+      <HomePage />
     </div>
   )
 }
 
-export default Home
+export default Home;
